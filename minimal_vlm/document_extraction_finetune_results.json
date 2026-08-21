@@ -1,0 +1,26 @@
+{
+  "model": "MiniLLaVA (Stage 2 recipe: clip-vit-base-patch32 + LoRA-adapted SmolLM2-135M, LOOCV fine-tuned on real ground truth)",
+  "num_epochs_per_fold": 300,
+  "results": {
+    "pan": {
+      "n": 15,
+      "per_field_accuracy": {
+        "name": 0.0,
+        "father_name": 0.0,
+        "dob": 0.0,
+        "pan_number": 0.0
+      },
+      "document_accuracy": 0.0
+    },
+    "aadhaar": {
+      "n": 15,
+      "per_field_accuracy": {
+        "name": 0.0,
+        "dob": 0.0,
+        "gender": 0.4,
+        "aadhaar_number": 0.0
+      },
+      "document_accuracy": 0.0
+    }
+  }
+}

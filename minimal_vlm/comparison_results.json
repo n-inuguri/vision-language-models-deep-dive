@@ -1,0 +1,218 @@
+{
+  "From-scratch": {
+    "bleu4": 0.009835149550532257,
+    "image_names": [
+      "1459032057_97e73ed6ab.jpg",
+      "1178705300_c224d9a4f1.jpg",
+      "2206594874_5e0087c6b7.jpg",
+      "3376809186_4e26d880b7.jpg",
+      "783994497_4f6885454d.jpg",
+      "2455528149_6c3477fd33.jpg",
+      "1294578091_2ad02fea91.jpg",
+      "483841513_e660391880.jpg",
+      "3270047169_2ed289a9af.jpg",
+      "3711611500_ea47b58b6f.jpg"
+    ],
+    "generated_captions": [
+      "a a man man and and a a woman woman are are sitting sitting on on a a bench bench . .",
+      "a a boy boy is is jumping jumping into into a a pool pool . .",
+      "a a man man and and a a woman woman are are sitting sitting on on a a bench bench . .",
+      "a a man man is is doing doing a a trick trick on on a a skateboard skateboard . .",
+      "a a man man and and a a woman woman are are sitting sitting on on a a bench bench . .",
+      "a a man man and and a a woman woman are are sitting sitting on on a a bench bench . .",
+      "a a man man and and a a woman woman are are sitting sitting on on a a bench bench . .",
+      "a a man man is is sitting sitting on on a a bench bench with . a",
+      "a a man man is is standing standing on on a a street street with with a a dog dog . .",
+      "a a man man is is riding riding a a bicycle bicycle on . a"
+    ]
+  },
+  "Stage 1 (LLaVA, projector only)": {
+    "bleu4": 0.20485299504497603,
+    "image_names": [
+      "1459032057_97e73ed6ab.jpg",
+      "1178705300_c224d9a4f1.jpg",
+      "2206594874_5e0087c6b7.jpg",
+      "3376809186_4e26d880b7.jpg",
+      "783994497_4f6885454d.jpg",
+      "2455528149_6c3477fd33.jpg",
+      "1294578091_2ad02fea91.jpg",
+      "483841513_e660391880.jpg",
+      "3270047169_2ed289a9af.jpg",
+      "3711611500_ea47b58b6f.jpg"
+    ],
+    "generated_captions": [
+      "A little girl is eating a cake .",
+      "A dog jumps out of a pool .",
+      "A man and a boy are sitting on a bench .",
+      "A group of people are walking on a beach .",
+      "A man is holding a bag of money .",
+      "A man is standing in front of a group of people .",
+      "A woman is painting a picture of a woman with a red dress .",
+      "A girl is jumping in a pool .",
+      "A boy is playing a skateboard on a wooden floor .",
+      "A dog is swimming in the water ."
+    ]
+  },
+  "Stage 2 (LoRA)": {
+    "bleu4": 0.42819749943812246,
+    "image_names": [
+      "1459032057_97e73ed6ab.jpg",
+      "1178705300_c224d9a4f1.jpg",
+      "2206594874_5e0087c6b7.jpg",
+      "3376809186_4e26d880b7.jpg",
+      "783994497_4f6885454d.jpg",
+      "2455528149_6c3477fd33.jpg",
+      "1294578091_2ad02fea91.jpg",
+      "483841513_e660391880.jpg",
+      "3270047169_2ed289a9af.jpg",
+      "3711611500_ea47b58b6f.jpg"
+    ],
+    "generated_captions": [
+      "A little girl is eating a cake .",
+      "A dog jumps into a pool .",
+      "A man and a woman sit at a table .",
+      "A group of people are walking through the water .",
+      "Two men are sitting at a counter .",
+      "A woman is standing in front of a group of people .",
+      "A woman is painting a picture of a man .",
+      "A girl is doing a handstand on a trampoline .",
+      "A person is riding a skateboard on a ramp .",
+      "A dog jumps into the water ."
+    ]
+  },
+  "qwen2.5vl:7b": {
+    "bleu4": 0.1854960173569592,
+    "image_names": [
+      "1459032057_97e73ed6ab.jpg",
+      "1178705300_c224d9a4f1.jpg",
+      "2206594874_5e0087c6b7.jpg",
+      "3376809186_4e26d880b7.jpg",
+      "783994497_4f6885454d.jpg",
+      "2455528149_6c3477fd33.jpg",
+      "1294578091_2ad02fea91.jpg",
+      "483841513_e660391880.jpg",
+      "3270047169_2ed289a9af.jpg",
+      "3711611500_ea47b58b6f.jpg"
+    ],
+    "generated_captions": [
+      "A young child enjoys a large sandwich in a restaurant setting.",
+      "A golden retriever leaps into a swimming pool.",
+      "A man and a child sit at a table in a restaurant, with the man looking at the camera.",
+      "\"Bathers and boats in a serene riverside scene.\"",
+      "Two young men are standing in a convenience store, with one reaching for a drink from a vending machine.",
+      "A man carries a large object on his head while walking past an art display.",
+      "A street artist paints a portrait while a passerby observes.",
+      "A person performs a handstand on a trampoline in a lush, green outdoor setting.",
+      "A skateboarder performs a trick on a red seesaw in a backyard setting.",
+      "A black dog leaps into the air to catch a frisbee in a lake near a boat."
+    ]
+  },
+  "qwen2.5vl:3b": {
+    "bleu4": 0.24042265529738815,
+    "image_names": [
+      "1459032057_97e73ed6ab.jpg",
+      "1178705300_c224d9a4f1.jpg",
+      "2206594874_5e0087c6b7.jpg",
+      "3376809186_4e26d880b7.jpg",
+      "783994497_4f6885454d.jpg",
+      "2455528149_6c3477fd33.jpg",
+      "1294578091_2ad02fea91.jpg",
+      "483841513_e660391880.jpg",
+      "3270047169_2ed289a9af.jpg",
+      "3711611500_ea47b58b6f.jpg"
+    ],
+    "generated_captions": [
+      "A young girl eats a sandwich in a restaurant.",
+      "A dog leaps into a pool, its fur flying behind it.",
+      "A man and a child sit at a table in a restaurant.",
+      "A group of people wading in shallow water near a beach with a distant building and trees in the background.",
+      "Two young men are standing in a store, one is pouring a drink into a cup.",
+      "A man carries a hammer over his shoulder while walking past a group of people standing near easels with paintings.",
+      "A street artist paints a portrait while a passerby talks on a cell phone.",
+      "A person is doing a handstand on a trampoline in a backyard.",
+      "A skateboarder performs a trick on a red metal rail in a backyard.",
+      "A black dog leaps into the water after a red frisbee."
+    ]
+  },
+  "llama3.2-vision:11b": {
+    "bleu4": 0.019132753137710404,
+    "image_names": [
+      "1459032057_97e73ed6ab.jpg",
+      "1178705300_c224d9a4f1.jpg",
+      "2206594874_5e0087c6b7.jpg",
+      "3376809186_4e26d880b7.jpg",
+      "783994497_4f6885454d.jpg",
+      "2455528149_6c3477fd33.jpg",
+      "1294578091_2ad02fea91.jpg",
+      "483841513_e660391880.jpg",
+      "3270047169_2ed289a9af.jpg",
+      "3711611500_ea47b58b6f.jpg"
+    ],
+    "generated_captions": [
+      "The image shows a young girl eating a bread roll in a restaurant.\n\nThe girl is wearing a striped shirt and has blonde hair. She is holding a bread roll in both hands and appears to be taking a bite. In the background, there are several people sitting at tables, and a man is standing behind the girl. The atmosphere seems to be a casual dining experience, possibly at a restaurant or caf\u00e9.",
+      "The image depicts a dog in mid-air, leaping over a pool. The dog's golden fur and wet appearance suggest it has just entered the water. Its front paws are extended, while its back paws are tucked in, and its head is turned to the right. The dog's ears are perked up, and its tail is held high.\n\nThe pool's blue water is visible below the dog, and a blue ball can be seen floating in the water. The pool's edge is visible on the right side of the image, with a concrete surface and a white tile border. In the background, greenery is visible, including plants and trees.\n\nThe image captures a moment of excitement and playfulness, as the dog appears to be enjoying itself in the pool. The overall atmosphere is one of fun and energy, with the dog's joyful expression and the vibrant colors of the pool and surrounding environment contributing to the lively mood.",
+      "This image captures a moment in a restaurant, where a man and a boy are seated at a table.\n\nThe man, with dark hair and dressed in a black sweater and black pants, sits on the right side of the table, while the boy, with short red hair, wears a green and white striped shirt and dark pants, sits on the left. A red bag is visible behind the boy's chair. The table is set with plates and utensils, and the man appears to be eating.\n\nIn the background, several other people are seated at tables, and a large window allows natural light to flood the room. The overall atmosphere suggests a casual, relaxed dining experience.",
+      "The image shows a group of people wading in a body of water, with a large amount of seaweed or other vegetation floating on the surface. The purpose of the image is to capture a moment of people enjoying the water, possibly for recreation or relaxation.\n\n* A group of people wading in a body of water:\n\t+ The people are scattered throughout the image, with some standing or sitting in the water and others wading through it.\n\t+ They appear to be enjoying themselves, with some looking up at the sky or around at their surroundings.\n* The water is calm and peaceful:\n\t+ The surface of the water is calm and still, with only a few ripples or waves visible.\n\t+ The water appears to be shallow, with the people able to wade through it easily.\n* There is a lot of seaweed or other vegetation in the water:\n\t+ The seaweed or other vegetation is floating on the surface of the water, creating a layer of vegetation that the people are wading through.\n\t+ The vegetation appears to be plentiful, with many people wading through it or sitting on top of it.\n\nOverall, the image suggests a peaceful and enjoyable experience for the people wading in the water. The calm and peaceful nature of the water, combined with the abundance of vegetation, creates a sense of serenity and relaxation.",
+      "The image shows two young men standing in a convenience store, both wearing white t-shirts with a red Chicago Bulls logo on the front. The man on the left has dark hair and is holding a cup with a straw in his right hand. The man on the right has dark hair and is wearing a black baseball cap. He is standing in front of a drink machine, with his right hand reaching out to press a button.\n\nIn the background, other customers are visible, as well as a woman in a gray tank top and a man wearing a red baseball cap. The store's ceiling is visible, with fluorescent lights and a speaker hanging from the ceiling. The overall atmosphere suggests that the two men are waiting in line or queuing for something.",
+      "The image depicts a man carrying a large object on his head, passing by a display of art or photographs on an easel. The man is wearing a white t-shirt and dark pants, and is carrying a large, round object on his head, which appears to be made of a light-colored material, possibly wood or cardboard. He is walking away from the camera, with his back to it.\n\nIn the background, a woman is standing in front of the easel, looking at one of the photographs or pieces of art on display. She is wearing a blue and white patterned top and dark pants, and has her back to the camera. The easel is made of wood and has a black frame around the photograph or piece of art on display. There are several other pieces of art or photographs on display on the wall behind the easel, but they are not clearly visible.\n\nThe overall atmosphere of the image suggests that it was taken at an art gallery or museum, where the man is likely an artist or a staff member, and the woman is a visitor or a patron. The image may be used to promote the art gallery or museum, or to showcase the artwork on display.",
+      "The image shows a woman sitting on the ground next to an easel with a painting of a woman's head and shoulders on it. \n\n* A woman sits on the ground next to an easel with a painting of a woman's head and shoulders on it.\n\t+ She is wearing a red dress and has her hair tied up in a red bow.\n\t+ She is holding a paintbrush in her right hand and a paper in her left hand.\n* The easel is made of wood and has a red frame.\n\t+ The painting is on a canvas and features a woman with long hair and a neutral expression.\n\t+ The background of the painting is blue and green.\n* The woman is sitting on a green mat on the ground.\n\t+ The mat is made of a thick, flat material and has a green color.\n\t+ The woman is sitting on the mat with her back against a wall.\n* In the background, there are several people sitting at a table.\n\t+ They are all wearing casual clothing and appear to be having a conversation.\n\t+ One of them is holding a cup of coffee.\n\nOverall, the image suggests that the woman is an artist who is working on a painting of a woman's head and shoulders. She is using an easel to support her canvas and is sitting on a green mat on the ground. The background of the image shows several people sitting at a table, which suggests that they are also working on their own projects.",
+      "The image shows a woman performing a handstand on a trampoline, her long brown hair visible as she hangs upside down. She is wearing a white t-shirt and light gray shorts, and her arms are outstretched as she balances on her hands. The trampoline has a blue border and is surrounded by trees and bushes, with a house visible in the background. The overall atmosphere suggests a fun and playful activity.",
+      "The image shows a young man skateboarding on a ramp in a backyard at night. He is wearing a white t-shirt, blue jeans, and blue and white sneakers. He has short brown hair and is holding a skateboard in his left hand. He is balancing on a red metal ramp that is about two feet high and three feet long. The ramp is on a dirt or grassy surface, and there is a white house in the background. The overall atmosphere suggests that the young man is enjoying himself while skateboarding.",
+      "The image shows a dog leaping from a speedboat into a body of water, creating a splash as it enters. The dog is black and has a red collar. The speedboat is white and blue, and has a canopy over the driver's seat.\n\nThe dog appears to be enjoying itself, as it is leaping from the speedboat with its paws and tail raised. The speedboat is in motion, creating a wake in the water as it moves.\n\nIn the background, there are trees and buildings visible, suggesting that the scene is taking place in a small town or village. The overall atmosphere of the image is one of fun and playfulness, as the dog is enjoying its time on the speedboat."
+    ]
+  },
+  "minicpm-v": {
+    "bleu4": 0.0692805888310847,
+    "image_names": [
+      "1459032057_97e73ed6ab.jpg",
+      "1178705300_c224d9a4f1.jpg",
+      "2206594874_5e0087c6b7.jpg",
+      "3376809186_4e26d880b7.jpg",
+      "783994497_4f6885454d.jpg",
+      "2455528149_6c3477fd33.jpg",
+      "1294578091_2ad02fea91.jpg",
+      "483841513_e660391880.jpg",
+      "3270047169_2ed289a9af.jpg",
+      "3711611500_ea47b58b6f.jpg"
+    ],
+    "generated_captions": [
+      "A young girl with brown hair and blue eyes is eating from a large sandwich bun; she wears a multicolored striped shirt as people sit around her at an indoor venue.",
+      "A dog is jumping into the pool with its mouth open to catch something blue.",
+      "A man and boy sitting across from each other at a table with food items on it including an orange as well as drinks.  There are many people seated around them all eating their meal.",
+      "A group of people swimming and playing in shallow water with buildings on the shore behind them.",
+      "Two teenagers at the snack bar in a store with drinks and food on display behind them.",
+      "A street scene featuring an outdoor art exhibition with several framed pieces displayed on easels and hanging against the backdrop of metal railings, with individuals examining or passing by the display, including one person carrying something over their shoulder as they walk past. The setting appears urban, possibly at a cultural event outside a building entrance.",
+      "A group of people are gathered outside on the sidewalk with one woman drawing another woman's portrait and an easel beside her displaying two paintings which is being watched by others sitting around while there appears to be beverages scattered about including beer bottles on a white jug next to it that all seems like some form of art exhibition.",
+      "A person is doing a handstand on an outdoor trampoline with trees and foliage around it.",
+      "A young skateboarder performs tricks on makeshift ramps and rails at night outside of his home.",
+      "A black dog is leaping into the water near boats and floating discs for toys."
+    ]
+  },
+  "llava-phi3": {
+    "bleu4": 0.06794933065184797,
+    "image_names": [
+      "1459032057_97e73ed6ab.jpg",
+      "1178705300_c224d9a4f1.jpg",
+      "2206594874_5e0087c6b7.jpg",
+      "3376809186_4e26d880b7.jpg",
+      "783994497_4f6885454d.jpg",
+      "2455528149_6c3477fd33.jpg",
+      "1294578091_2ad02fea91.jpg",
+      "483841513_e660391880.jpg",
+      "3270047169_2ed289a9af.jpg",
+      "3711611500_ea47b58b6f.jpg"
+    ],
+    "generated_captions": [
+      "A young girl with blonde hair is eating a donut.",
+      "A brown dog is jumping to catch a blue ball in a swimming pool.",
+      "Two men sitting at a table talking and laughing. One of them is wearing a black shirt while the other is wearing a striped shirt. A child is also present on the table with them.",
+      "People standing and playing in the water by a large building with many windows.",
+      "The two boys are standing at the soda fountain getting sodas. One boy is wearing a \"Chicago Bears\" t-shirt. They are next to a sign that says \"Sunkist\". A girl with an ice cream cone behind them and another person in a red shirt behind them.",
+      "A man in a suit carries an oversized yellow object up the stairs.",
+      "People are sitting around an art easel outside. The painting depicts a woman. Cell phones can be seen in many hands.",
+      "A person is doing the splits on a blue mattress.",
+      "A man jumps over a red rail on his skateboard.",
+      "A dog is running through the water while chasing a red and blue frisbee."
+    ]
+  }
+}

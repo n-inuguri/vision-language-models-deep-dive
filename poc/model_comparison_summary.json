@@ -1,0 +1,293 @@
+{
+  "models": [
+    "qwen2.5vl:7b",
+    "qwen2.5vl:3b",
+    "llama3.2-vision:11b",
+    "minicpm-v",
+    "llava-phi3"
+  ],
+  "wellformed_rates": {
+    "pan": {
+      "qwen2.5vl:7b": {
+        "name": 1.0,
+        "father_name": 0.99,
+        "dob": 1.0,
+        "pan_number": 0.98
+      },
+      "qwen2.5vl:3b": {
+        "name": 1.0,
+        "father_name": 0.97,
+        "dob": 0.96,
+        "pan_number": 0.85
+      },
+      "llama3.2-vision:11b": {
+        "name": 1.0,
+        "father_name": 1.0,
+        "dob": 1.0,
+        "pan_number": 0.96
+      },
+      "minicpm-v": {
+        "name": 1.0,
+        "father_name": 0.72,
+        "dob": 0.99,
+        "pan_number": 0.78
+      },
+      "llava-phi3": {
+        "name": 0.95,
+        "father_name": 0.3,
+        "dob": 0.85,
+        "pan_number": 0.03
+      }
+    },
+    "aadhaar": {
+      "qwen2.5vl:7b": {
+        "name": 0.970873786407767,
+        "dob": 0.9611650485436893,
+        "gender": 0.9805825242718447,
+        "aadhaar_number": 0.941747572815534
+      },
+      "qwen2.5vl:3b": {
+        "name": 0.9611650485436893,
+        "dob": 0.9514563106796117,
+        "gender": 0.970873786407767,
+        "aadhaar_number": 0.9514563106796117
+      },
+      "llama3.2-vision:11b": {
+        "name": 0.970873786407767,
+        "dob": 0.8640776699029126,
+        "gender": 0.9902912621359223,
+        "aadhaar_number": 0.9611650485436893
+      },
+      "minicpm-v": {
+        "name": 0.9320388349514563,
+        "dob": 0.7378640776699029,
+        "gender": 0.970873786407767,
+        "aadhaar_number": 0.8640776699029126
+      },
+      "llava-phi3": {
+        "name": 0.9223300970873787,
+        "dob": 0.8640776699029126,
+        "gender": 0.8058252427184466,
+        "aadhaar_number": 0.24271844660194175
+      }
+    }
+  },
+  "latency_seconds": {
+    "pan": {
+      "qwen2.5vl:7b": {
+        "avg": 17.396722910404204,
+        "median": 24.173988699913025
+      },
+      "qwen2.5vl:3b": {
+        "avg": 13.300039284229278,
+        "median": 20.534541130065918
+      },
+      "llama3.2-vision:11b": {
+        "avg": 9.482156975269318,
+        "median": 9.491626143455505
+      },
+      "minicpm-v": {
+        "avg": 5.045765912532806,
+        "median": 5.4144004583358765
+      },
+      "llava-phi3": {
+        "avg": 7.507989394664764,
+        "median": 1.9726810455322266
+      }
+    },
+    "aadhaar": {
+      "qwen2.5vl:7b": {
+        "avg": 4.3567698487957705,
+        "median": 4.281306982040405
+      },
+      "qwen2.5vl:3b": {
+        "avg": 2.839283218661558,
+        "median": 2.8163881301879883
+      },
+      "llama3.2-vision:11b": {
+        "avg": 9.199472607918157,
+        "median": 9.090753078460693
+      },
+      "minicpm-v": {
+        "avg": 3.8129789204273408,
+        "median": 3.7437329292297363
+      },
+      "llava-phi3": {
+        "avg": 10.008932011798748,
+        "median": 2.042423725128174
+      }
+    }
+  },
+  "cross_model_agreement": {
+    "pan": {
+      "qwen2.5vl:7b": {
+        "name": 0.99,
+        "father_name": 0.98,
+        "dob": 0.98,
+        "pan_number": 0.99
+      },
+      "qwen2.5vl:3b": {
+        "name": 0.93,
+        "father_name": 0.92,
+        "dob": 0.97,
+        "pan_number": 0.82
+      },
+      "llama3.2-vision:11b": {
+        "name": 0.88,
+        "father_name": 0.8,
+        "dob": 0.97,
+        "pan_number": 0.89
+      },
+      "minicpm-v": {
+        "name": 0.73,
+        "father_name": 0.63,
+        "dob": 0.93,
+        "pan_number": 0.76
+      },
+      "llava-phi3": {
+        "name": 0.13,
+        "father_name": 0.05,
+        "dob": 0.12,
+        "pan_number": 0.0
+      }
+    },
+    "aadhaar": {
+      "qwen2.5vl:7b": {
+        "name": 0.970873786407767,
+        "dob": 0.9805825242718447,
+        "gender": 0.9805825242718447,
+        "aadhaar_number": 0.9029126213592233
+      },
+      "qwen2.5vl:3b": {
+        "name": 0.8252427184466019,
+        "dob": 0.941747572815534,
+        "gender": 0.970873786407767,
+        "aadhaar_number": 0.7475728155339806
+      },
+      "llama3.2-vision:11b": {
+        "name": 0.7669902912621359,
+        "dob": 0.7669902912621359,
+        "gender": 0.8155339805825242,
+        "aadhaar_number": 0.6407766990291263
+      },
+      "minicpm-v": {
+        "name": 0.7766990291262136,
+        "dob": 0.6310679611650486,
+        "gender": 0.970873786407767,
+        "aadhaar_number": 0.49514563106796117
+      },
+      "llava-phi3": {
+        "name": 0.2524271844660194,
+        "dob": 0.17475728155339806,
+        "gender": 0.7378640776699029,
+        "aadhaar_number": 0.04854368932038835
+      }
+    }
+  },
+  "manual_ground_truth_accuracy": {
+    "pan": {
+      "qwen2.5vl:7b": {
+        "n": 15,
+        "per_field": {
+          "name": 0.8666666666666667,
+          "father_name": 1.0,
+          "dob": 0.9333333333333333,
+          "pan_number": 0.9333333333333333
+        },
+        "document": 0.8666666666666667
+      },
+      "qwen2.5vl:3b": {
+        "n": 15,
+        "per_field": {
+          "name": 0.8,
+          "father_name": 0.8,
+          "dob": 0.9333333333333333,
+          "pan_number": 0.6666666666666666
+        },
+        "document": 0.4666666666666667
+      },
+      "llama3.2-vision:11b": {
+        "n": 15,
+        "per_field": {
+          "name": 0.8,
+          "father_name": 0.8,
+          "dob": 0.9333333333333333,
+          "pan_number": 0.9333333333333333
+        },
+        "document": 0.7333333333333333
+      },
+      "minicpm-v": {
+        "n": 15,
+        "per_field": {
+          "name": 0.7333333333333333,
+          "father_name": 0.7333333333333333,
+          "dob": 0.8666666666666667,
+          "pan_number": 0.6666666666666666
+        },
+        "document": 0.4
+      },
+      "llava-phi3": {
+        "n": 15,
+        "per_field": {
+          "name": 0.0,
+          "father_name": 0.13333333333333333,
+          "dob": 0.13333333333333333,
+          "pan_number": 0.0
+        },
+        "document": 0.0
+      }
+    },
+    "aadhaar": {
+      "qwen2.5vl:7b": {
+        "n": 15,
+        "per_field": {
+          "name": 0.7333333333333333,
+          "dob": 0.8666666666666667,
+          "gender": 0.9333333333333333,
+          "aadhaar_number": 1.0
+        },
+        "document": 0.6666666666666666
+      },
+      "qwen2.5vl:3b": {
+        "n": 15,
+        "per_field": {
+          "name": 0.7333333333333333,
+          "dob": 0.8666666666666667,
+          "gender": 0.9333333333333333,
+          "aadhaar_number": 0.7333333333333333
+        },
+        "document": 0.4666666666666667
+      },
+      "llama3.2-vision:11b": {
+        "n": 15,
+        "per_field": {
+          "name": 0.8666666666666667,
+          "dob": 0.8,
+          "gender": 0.8666666666666667,
+          "aadhaar_number": 0.4666666666666667
+        },
+        "document": 0.4
+      },
+      "minicpm-v": {
+        "n": 15,
+        "per_field": {
+          "name": 0.8666666666666667,
+          "dob": 0.8,
+          "gender": 0.9333333333333333,
+          "aadhaar_number": 0.4
+        },
+        "document": 0.13333333333333333
+      },
+      "llava-phi3": {
+        "n": 15,
+        "per_field": {
+          "name": 0.26666666666666666,
+          "dob": 0.2,
+          "gender": 0.6666666666666666,
+          "aadhaar_number": 0.0
+        },
+        "document": 0.0
+      }
+    }
+  }
+}

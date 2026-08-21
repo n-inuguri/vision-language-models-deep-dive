@@ -1,0 +1,798 @@
+{
+  "rental_agreements": {
+    "retrieval": {
+      "n": 14,
+      "recall_at_1": 0.8571428571428571,
+      "recall_at_5": 0.8571428571428571
+    },
+    "experiment_1_no_retrieval": {
+      "qwen2.5vl:7b": {
+        "n": 14,
+        "empty_answer_rate": 0.07142857142857142,
+        "avg_latency_s": 9.319401723997933,
+        "median_latency_s": 1.2523608207702637,
+        "accuracy_proxy": 0.7692307692307693,
+        "n_scored": 13
+      },
+      "qwen2.5vl:3b": {
+        "n": 17,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 6.690430304583381,
+        "median_latency_s": 0.7097768783569336,
+        "accuracy_proxy": 0.5882352941176471,
+        "n_scored": 17
+      },
+      "llama3.2-vision:11b": {
+        "n": 23,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 3.0746092278024424,
+        "median_latency_s": 1.560692310333252,
+        "accuracy_proxy": 0.6521739130434783,
+        "n_scored": 23
+      },
+      "minicpm-v": {
+        "n": 23,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 2.7024561529574185,
+        "median_latency_s": 1.3875610828399658,
+        "accuracy_proxy": 0.5652173913043478,
+        "n_scored": 23
+      },
+      "llava-phi3": {
+        "n": 23,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 1.935586701268735,
+        "median_latency_s": 0.9823098182678223,
+        "accuracy_proxy": 0.043478260869565216,
+        "n_scored": 23
+      },
+      "google/gemini-3.1-pro-preview": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 10.015540631612142,
+        "median_latency_s": 8.963868856430054,
+        "accuracy_proxy": 0.9333333333333333,
+        "n_scored": 15,
+        "total_cost_usd": 0.186152,
+        "avg_cost_usd": 0.012410133333333333
+      },
+      "qwen/qwen2.5-vl-72b-instruct": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 6.014133946100871,
+        "median_latency_s": 5.107461929321289,
+        "accuracy_proxy": 0.8666666666666667,
+        "n_scored": 15,
+        "total_cost_usd": 0.01555675,
+        "avg_cost_usd": 0.0010371166666666666
+      }
+    },
+    "experiment_2_retrieve_then_generate": {
+      "qwen2.5vl:7b": {
+        "n": 23,
+        "empty_answer_rate": 0.4782608695652174,
+        "avg_latency_s": 27.75409326346024,
+        "median_latency_s": 27.64760708808899,
+        "accuracy_proxy": 0.0,
+        "n_scored": 1
+      },
+      "qwen2.5vl:3b": {
+        "n": 13,
+        "empty_answer_rate": 0.46153846153846156,
+        "avg_latency_s": 35.07681472484882,
+        "median_latency_s": 28.85749626159668
+      },
+      "llama3.2-vision:11b": {
+        "n": 37,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 27.157422368590897,
+        "median_latency_s": 14.399401903152466,
+        "accuracy_proxy": 0.5,
+        "n_scored": 14
+      },
+      "minicpm-v": {
+        "n": 36,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 32.56699093182882,
+        "median_latency_s": 32.958373069763184,
+        "accuracy_proxy": 0.42857142857142855,
+        "n_scored": 14
+      },
+      "llava-phi3": {
+        "n": 37,
+        "empty_answer_rate": 0.02702702702702703,
+        "avg_latency_s": 10.35749012070733,
+        "median_latency_s": 8.448530197143555,
+        "accuracy_proxy": 0.0,
+        "n_scored": 14
+      },
+      "google/gemini-3.1-pro-preview": {
+        "n": 23,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 33.435991515284,
+        "median_latency_s": 17.544353008270264,
+        "total_cost_usd": 0.7122600000000001,
+        "avg_cost_usd": 0.030967826086956526
+      },
+      "qwen/qwen2.5-vl-72b-instruct": {
+        "n": 23,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 13.195510491080906,
+        "median_latency_s": 12.238677978515625,
+        "total_cost_usd": 0.07983449999999999,
+        "avg_cost_usd": 0.003471065217391304
+      }
+    }
+  },
+  "chartqa": {
+    "retrieval": {
+      "n": 60,
+      "recall_at_1": 0.6,
+      "recall_at_5": 0.65
+    },
+    "experiment_1_no_retrieval": {
+      "qwen2.5vl:7b": {
+        "n": 53,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 352.8849338090645,
+        "median_latency_s": 15.377768993377686,
+        "accuracy_proxy": 0.8867924528301887,
+        "n_scored": 53
+      },
+      "qwen2.5vl:3b": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 7.5073553919792175,
+        "median_latency_s": 5.925033807754517,
+        "accuracy_proxy": 0.8,
+        "n_scored": 60
+      },
+      "llama3.2-vision:11b": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 18.851143014431,
+        "median_latency_s": 12.604851961135864,
+        "accuracy_proxy": 0.65,
+        "n_scored": 60
+      },
+      "minicpm-v": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 3.292845006783803,
+        "median_latency_s": 2.6759629249572754,
+        "accuracy_proxy": 0.5666666666666667,
+        "n_scored": 60
+      },
+      "llava-phi3": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 1.9744811971982321,
+        "median_latency_s": 1.8344581127166748,
+        "accuracy_proxy": 0.3,
+        "n_scored": 60
+      },
+      "google/gemini-3.1-pro-preview": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 11.725265979766846,
+        "median_latency_s": 10.723165035247803,
+        "accuracy_proxy": 0.8666666666666667,
+        "n_scored": 15,
+        "total_cost_usd": 0.22396,
+        "avg_cost_usd": 0.014930666666666667
+      },
+      "qwen/qwen2.5-vl-72b-instruct": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 4.655282751719157,
+        "median_latency_s": 3.8879830837249756,
+        "accuracy_proxy": 0.8,
+        "n_scored": 15,
+        "total_cost_usd": 0.0033787500000000002,
+        "avg_cost_usd": 0.00022525000000000003
+      }
+    },
+    "experiment_2_retrieve_then_generate": {
+      "qwen2.5vl:7b": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 20.167826930681866,
+        "median_latency_s": 19.46428894996643,
+        "accuracy_proxy": 0.48333333333333334,
+        "n_scored": 60
+      },
+      "qwen2.5vl:3b": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 13.606659523646037,
+        "median_latency_s": 12.963037967681885,
+        "accuracy_proxy": 0.48333333333333334,
+        "n_scored": 60
+      },
+      "llama3.2-vision:11b": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 10.809958446025849,
+        "median_latency_s": 9.085981845855713,
+        "accuracy_proxy": 0.43333333333333335,
+        "n_scored": 60
+      },
+      "minicpm-v": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 9.982543706893921,
+        "median_latency_s": 9.621786117553711,
+        "accuracy_proxy": 0.43333333333333335,
+        "n_scored": 60
+      },
+      "llava-phi3": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 6.764678064982096,
+        "median_latency_s": 6.754858016967773,
+        "accuracy_proxy": 0.15,
+        "n_scored": 60
+      },
+      "google/gemini-3.1-pro-preview": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 24.100040006637574,
+        "median_latency_s": 20.63764476776123,
+        "accuracy_proxy": 0.6666666666666666,
+        "n_scored": 15,
+        "total_cost_usd": 0.6304679999999999,
+        "avg_cost_usd": 0.0420312
+      },
+      "qwen/qwen2.5-vl-72b-instruct": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 6.630146169662476,
+        "median_latency_s": 5.084466934204102,
+        "accuracy_proxy": 0.6,
+        "n_scored": 15,
+        "total_cost_usd": 0.0127645,
+        "avg_cost_usd": 0.0008509666666666666
+      }
+    }
+  },
+  "spiqa": {
+    "retrieval": {
+      "n": 60,
+      "recall_at_1": 0.6166666666666667,
+      "recall_at_5": 0.8666666666666667
+    },
+    "experiment_1_no_retrieval": {
+      "qwen2.5vl:7b": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 2.458593690395355,
+        "median_latency_s": 1.9292221069335938,
+        "accuracy_proxy": 0.6333333333333333,
+        "n_scored": 60
+      },
+      "qwen2.5vl:3b": {
+        "n": 59,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 1.2776919259863384,
+        "median_latency_s": 1.052912950515747,
+        "accuracy_proxy": 0.5084745762711864,
+        "n_scored": 59
+      },
+      "llama3.2-vision:11b": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 307.59654994010924,
+        "median_latency_s": 34.39590620994568,
+        "accuracy_proxy": 0.6333333333333333,
+        "n_scored": 60
+      },
+      "minicpm-v": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 12.246554215749105,
+        "median_latency_s": 10.970065116882324,
+        "accuracy_proxy": 0.7666666666666667,
+        "n_scored": 60
+      },
+      "llava-phi3": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 5.187250256538391,
+        "median_latency_s": 4.4865429401397705,
+        "accuracy_proxy": 0.5,
+        "n_scored": 60
+      },
+      "google/gemini-3.1-pro-preview": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 19.753396399815877,
+        "median_latency_s": 14.403483867645264,
+        "accuracy_proxy": 0.8,
+        "n_scored": 15,
+        "total_cost_usd": 0.4093919999999999,
+        "avg_cost_usd": 0.027292799999999996
+      },
+      "qwen/qwen2.5-vl-72b-instruct": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 10.737746302286784,
+        "median_latency_s": 9.091324806213379,
+        "accuracy_proxy": 0.9333333333333333,
+        "n_scored": 15,
+        "total_cost_usd": 0.00378575,
+        "avg_cost_usd": 0.00025238333333333333
+      }
+    },
+    "experiment_2_retrieve_then_generate": {
+      "qwen2.5vl:7b": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 8.967650159200032,
+        "median_latency_s": 9.089066982269287,
+        "accuracy_proxy": 0.7,
+        "n_scored": 60
+      },
+      "qwen2.5vl:3b": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 5.00343930721283,
+        "median_latency_s": 4.960363864898682,
+        "accuracy_proxy": 0.45,
+        "n_scored": 60
+      },
+      "llama3.2-vision:11b": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 350.5612006545067,
+        "median_latency_s": 15.743257999420166,
+        "accuracy_proxy": 0.48333333333333334,
+        "n_scored": 60
+      },
+      "minicpm-v": {
+        "n": 60,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 10.45788772503535,
+        "median_latency_s": 10.687610149383545,
+        "accuracy_proxy": 0.6666666666666666,
+        "n_scored": 60
+      },
+      "llava-phi3": {
+        "n": 60,
+        "empty_answer_rate": 0.03333333333333333,
+        "avg_latency_s": 5.994656201203664,
+        "median_latency_s": 5.99789571762085,
+        "accuracy_proxy": 0.0,
+        "n_scored": 58
+      },
+      "google/gemini-3.1-pro-preview": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 18.650095971425376,
+        "median_latency_s": 17.50997495651245,
+        "accuracy_proxy": 0.8666666666666667,
+        "n_scored": 15,
+        "total_cost_usd": 0.503544,
+        "avg_cost_usd": 0.0335696
+      },
+      "qwen/qwen2.5-vl-72b-instruct": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 7.649546019236246,
+        "median_latency_s": 6.89612889289856,
+        "accuracy_proxy": 0.8666666666666667,
+        "n_scored": 15,
+        "total_cost_usd": 0.007988,
+        "avg_cost_usd": 0.0005325333333333333
+      }
+    }
+  },
+  "mmlongbench_doc": {
+    "retrieval": {
+      "n": 24,
+      "recall_at_1": 0.5416666666666666,
+      "recall_at_5": 0.75
+    },
+    "experiment_1_no_retrieval": {
+      "qwen2.5vl:7b": {
+        "n": 28,
+        "empty_answer_rate": 0.17857142857142858,
+        "avg_latency_s": 478.2947207774435,
+        "median_latency_s": 302.9241771697998,
+        "accuracy_proxy": 0.42857142857142855,
+        "n_scored": 21,
+        "abstention_accuracy": 0.0,
+        "n_unanswerable": 2
+      },
+      "qwen2.5vl:3b": {
+        "n": 16,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 302.3871480077505,
+        "median_latency_s": 20.71112084388733,
+        "accuracy_proxy": 0.4375,
+        "n_scored": 16
+      },
+      "llama3.2-vision:11b": {
+        "n": 31,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 257.5751770234877,
+        "median_latency_s": 9.43758511543274,
+        "accuracy_proxy": 0.48,
+        "n_scored": 25,
+        "abstention_accuracy": 0.16666666666666666,
+        "n_unanswerable": 6
+      },
+      "minicpm-v": {
+        "n": 31,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 36.922475907110396,
+        "median_latency_s": 9.225082159042358,
+        "accuracy_proxy": 0.4,
+        "n_scored": 25,
+        "abstention_accuracy": 0.0,
+        "n_unanswerable": 6
+      },
+      "llava-phi3": {
+        "n": 31,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 4.833121830417264,
+        "median_latency_s": 2.7972958087921143,
+        "accuracy_proxy": 0.16,
+        "n_scored": 25,
+        "abstention_accuracy": 0.0,
+        "n_unanswerable": 6
+      },
+      "google/gemini-3.1-pro-preview": {
+        "n": 14,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 16.11741132395608,
+        "median_latency_s": 13.35033893585205,
+        "accuracy_proxy": 0.8,
+        "n_scored": 10,
+        "abstention_accuracy": 0.25,
+        "n_unanswerable": 4,
+        "total_cost_usd": 0.547604,
+        "avg_cost_usd": 0.03911457142857143
+      },
+      "qwen/qwen2.5-vl-72b-instruct": {
+        "n": 12,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 11.605840663115183,
+        "median_latency_s": 7.51178503036499,
+        "accuracy_proxy": 0.8,
+        "n_scored": 10,
+        "abstention_accuracy": 1.0,
+        "n_unanswerable": 2,
+        "total_cost_usd": 0.065147,
+        "avg_cost_usd": 0.005428916666666666
+      }
+    },
+    "experiment_2_retrieve_then_generate": {
+      "qwen2.5vl:7b": {
+        "n": 24,
+        "empty_answer_rate": 0.7083333333333334,
+        "avg_latency_s": 218.9701145887375,
+        "median_latency_s": 26.38623595237732,
+        "accuracy_proxy": 0.0,
+        "n_scored": 6,
+        "abstention_accuracy": 0.0,
+        "n_unanswerable": 1
+      },
+      "llama3.2-vision:11b": {
+        "n": 31,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 314.74003674907067,
+        "median_latency_s": 9.341662406921387,
+        "accuracy_proxy": 0.28,
+        "n_scored": 25,
+        "abstention_accuracy": 0.0,
+        "n_unanswerable": 6
+      },
+      "minicpm-v": {
+        "n": 31,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 23.16177829619377,
+        "median_latency_s": 23.423094034194946,
+        "accuracy_proxy": 0.48,
+        "n_scored": 25,
+        "abstention_accuracy": 0.0,
+        "n_unanswerable": 6
+      },
+      "llava-phi3": {
+        "n": 31,
+        "empty_answer_rate": 0.03225806451612903,
+        "avg_latency_s": 6.352412531452794,
+        "median_latency_s": 6.339303255081177,
+        "accuracy_proxy": 0.041666666666666664,
+        "n_scored": 24,
+        "abstention_accuracy": 0.0,
+        "n_unanswerable": 6
+      },
+      "google/gemini-3.1-pro-preview": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 13.041362444559732,
+        "median_latency_s": 12.246031761169434,
+        "accuracy_proxy": 0.7,
+        "n_scored": 10,
+        "abstention_accuracy": 0.2,
+        "n_unanswerable": 5,
+        "total_cost_usd": 0.3205860000000001,
+        "avg_cost_usd": 0.021372400000000007
+      },
+      "qwen/qwen2.5-vl-72b-instruct": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 10.231183910369873,
+        "median_latency_s": 9.999027013778687,
+        "accuracy_proxy": 0.7,
+        "n_scored": 10,
+        "abstention_accuracy": 0.2,
+        "n_unanswerable": 5,
+        "total_cost_usd": 0.05245400000000001,
+        "avg_cost_usd": 0.003496933333333334
+      }
+    }
+  },
+  "pan": {
+    "retrieval": {
+      "n": 480,
+      "recall_at_1": 0.6979166666666666,
+      "recall_at_5": 0.8395833333333333
+    },
+    "experiment_1_no_retrieval": {
+      "qwen2.5vl:7b": {
+        "n": 531,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 38.675970227480384,
+        "median_latency_s": 2.1082119941711426,
+        "accuracy_proxy": 0.5729166666666666,
+        "n_scored": 480
+      },
+      "qwen2.5vl:3b": {
+        "n": 531,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 6.575292226284911,
+        "median_latency_s": 1.3522331714630127,
+        "accuracy_proxy": 0.5416666666666666,
+        "n_scored": 480
+      },
+      "llama3.2-vision:11b": {
+        "n": 531,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 11.101655320708137,
+        "median_latency_s": 2.0759952068328857,
+        "accuracy_proxy": 0.12083333333333333,
+        "n_scored": 480
+      },
+      "minicpm-v": {
+        "n": 531,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 17.84860142565941,
+        "median_latency_s": 1.3218512535095215,
+        "accuracy_proxy": 0.55625,
+        "n_scored": 480
+      },
+      "llava-phi3": {
+        "n": 531,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 15.16226250393467,
+        "median_latency_s": 0.896543025970459,
+        "accuracy_proxy": 0.10625,
+        "n_scored": 480
+      },
+      "google/gemini-3.1-pro-preview": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 8.740504280726116,
+        "median_latency_s": 8.943565845489502,
+        "accuracy_proxy": 0.5,
+        "n_scored": 2,
+        "total_cost_usd": 0.148282,
+        "avg_cost_usd": 0.009885466666666667
+      },
+      "qwen/qwen2.5-vl-72b-instruct": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 2.4686545530954995,
+        "median_latency_s": 2.2603068351745605,
+        "accuracy_proxy": 1.0,
+        "n_scored": 2,
+        "total_cost_usd": 0.005649000000000001,
+        "avg_cost_usd": 0.0003766000000000001
+      }
+    },
+    "experiment_2_retrieve_then_generate": {
+      "qwen2.5vl:7b": {
+        "n": 518,
+        "empty_answer_rate": 0.971042471042471,
+        "avg_latency_s": 49.79429446592294,
+        "median_latency_s": 27.84074091911316,
+        "accuracy_proxy": 0.42857142857142855,
+        "n_scored": 14
+      },
+      "qwen2.5vl:3b": {
+        "n": 9,
+        "empty_answer_rate": 0.1111111111111111,
+        "avg_latency_s": 24.541282388899063,
+        "median_latency_s": 24.824524879455566,
+        "accuracy_proxy": 0.0,
+        "n_scored": 1
+      },
+      "llama3.2-vision:11b": {
+        "n": 59,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 2.8855341369822876,
+        "median_latency_s": 1.1780669689178467,
+        "accuracy_proxy": 0.375,
+        "n_scored": 8
+      },
+      "minicpm-v": {
+        "n": 281,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 17.76476651324072,
+        "median_latency_s": 17.242181062698364,
+        "accuracy_proxy": 0.49130434782608695,
+        "n_scored": 230
+      },
+      "llava-phi3": {
+        "n": 531,
+        "empty_answer_rate": 0.02824858757062147,
+        "avg_latency_s": 6.170026758969841,
+        "median_latency_s": 5.938632965087891,
+        "accuracy_proxy": 0.008565310492505354,
+        "n_scored": 467
+      },
+      "google/gemini-3.1-pro-preview": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 9.765659793217976,
+        "median_latency_s": 9.808304786682129,
+        "accuracy_proxy": 1.0,
+        "n_scored": 2,
+        "total_cost_usd": 0.274808,
+        "avg_cost_usd": 0.018320533333333333
+      },
+      "qwen/qwen2.5-vl-72b-instruct": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 4.76294272740682,
+        "median_latency_s": 4.914592027664185,
+        "accuracy_proxy": 1.0,
+        "n_scored": 2,
+        "total_cost_usd": 0.0324675,
+        "avg_cost_usd": 0.0021645
+      }
+    }
+  },
+  "aadhaar": {
+    "retrieval": {
+      "n": 68,
+      "recall_at_1": 0.04411764705882353,
+      "recall_at_5": 0.14705882352941177
+    },
+    "experiment_1_no_retrieval": {
+      "qwen2.5vl:7b": {
+        "n": 68,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 2.6677745545611664,
+        "median_latency_s": 2.9032063484191895,
+        "accuracy_proxy": 0.22058823529411764,
+        "n_scored": 68
+      },
+      "qwen2.5vl:3b": {
+        "n": 68,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 0.8769205317777746,
+        "median_latency_s": 0.7068557739257812,
+        "accuracy_proxy": 0.17647058823529413,
+        "n_scored": 68
+      },
+      "llama3.2-vision:11b": {
+        "n": 68,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 1.25859034762663,
+        "median_latency_s": 0.7660248279571533,
+        "accuracy_proxy": 0.1323529411764706,
+        "n_scored": 68
+      },
+      "minicpm-v": {
+        "n": 68,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 19.481116501724017,
+        "median_latency_s": 1.3163888454437256,
+        "accuracy_proxy": 0.3235294117647059,
+        "n_scored": 68
+      },
+      "llava-phi3": {
+        "n": 68,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 0.9675284904592177,
+        "median_latency_s": 0.8507018089294434,
+        "accuracy_proxy": 0.17647058823529413,
+        "n_scored": 68
+      },
+      "google/gemini-3.1-pro-preview": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 7.434067630767823,
+        "median_latency_s": 7.239743947982788,
+        "accuracy_proxy": 0.06666666666666667,
+        "n_scored": 15,
+        "total_cost_usd": 0.10667399999999999,
+        "avg_cost_usd": 0.007111599999999999
+      },
+      "qwen/qwen2.5-vl-72b-instruct": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 3.320861482620239,
+        "median_latency_s": 2.8645741939544678,
+        "accuracy_proxy": 0.0,
+        "n_scored": 15,
+        "total_cost_usd": 0.001389,
+        "avg_cost_usd": 9.26e-05
+      }
+    },
+    "experiment_2_retrieve_then_generate": {
+      "qwen2.5vl:7b": {
+        "n": 68,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 38.99599175242817,
+        "median_latency_s": 16.379298210144043,
+        "accuracy_proxy": 0.20588235294117646,
+        "n_scored": 68
+      },
+      "qwen2.5vl:3b": {
+        "n": 68,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 65.95904417598949,
+        "median_latency_s": 9.10608196258545,
+        "accuracy_proxy": 0.3382352941176471,
+        "n_scored": 68
+      },
+      "llama3.2-vision:11b": {
+        "n": 68,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 23.94865776160184,
+        "median_latency_s": 9.017566919326782,
+        "accuracy_proxy": 0.058823529411764705,
+        "n_scored": 68
+      },
+      "minicpm-v": {
+        "n": 68,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 41.958102352478925,
+        "median_latency_s": 11.511914014816284,
+        "accuracy_proxy": 0.3088235294117647,
+        "n_scored": 68
+      },
+      "llava-phi3": {
+        "n": 68,
+        "empty_answer_rate": 0.19117647058823528,
+        "avg_latency_s": 31.436285537831925,
+        "median_latency_s": 4.957711219787598,
+        "accuracy_proxy": 0.01818181818181818,
+        "n_scored": 55
+      },
+      "google/gemini-3.1-pro-preview": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 11.334438467025757,
+        "median_latency_s": 9.81544303894043,
+        "accuracy_proxy": 0.2,
+        "n_scored": 15,
+        "total_cost_usd": 0.344658,
+        "avg_cost_usd": 0.0229772
+      },
+      "qwen/qwen2.5-vl-72b-instruct": {
+        "n": 15,
+        "empty_answer_rate": 0.0,
+        "avg_latency_s": 3.2560037771860757,
+        "median_latency_s": 3.0726637840270996,
+        "accuracy_proxy": 0.06666666666666667,
+        "n_scored": 15,
+        "total_cost_usd": 0.01065425,
+        "avg_cost_usd": 0.0007102833333333334
+      }
+    }
+  }
+}

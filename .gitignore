@@ -1,0 +1,90 @@
+# Tech report drafts and backup notebooks -- not part of the code repo;
+# the report is shared separately (Google Doc), and Backup/ is superseded by
+# minimal_vlm/.
+TECH_REPORT.md
+TECH_REPORT_EXTENDED.md
+VLM_TECH_REPORT.docx
+Backup/
+
+# Informal working notes -- superseded by README.md for repo documentation.
+visual_rag/PROGRESS_NOTES.md
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# macOS Finder metadata
+.DS_Store
+
+# Virtual environments
+.venv
+# Isolated env for colpali-engine (Week 4 Visual RAG retrieval layer) -- kept
+# separate from .venv because colpali-engine's torch/transformers pins are
+# incompatible with the main project's. See visual_rag/ for usage.
+.venv-colpali
+
+# Cloud VLM API keys (OpenRouter) for the Visual RAG phase's cloud-model
+# comparison. Local-only secret, never committed -- unlike the PII entries
+# below, the risk here is credential leakage/cost exposure, not subject
+# privacy. See visual_rag/rag_lib.py and .env.example for the expected
+# variable name.
+.env
+
+# All raw/rendered datasets (~34GB: Flickr8k, ChartQA, SPIQA, MMLongBench-Doc,
+# PAN/Aadhaar, rental agreements). Too large to push to GitHub regardless of
+# license, and every dataset here is either downloadable (see Dataset
+# References in TECH_REPORT_EXTENDED.md) or, for PAN/Aadhaar/rental
+# agreements specifically, real unredacted PII of real people (names, DOB,
+# live PAN/Aadhaar numbers, phone numbers, addresses) that must never be
+# committed or pushed regardless of size. Local-only.
+data/
+
+# Derived extraction results on the real PAN/Aadhaar datasets -- these cache
+# raw per-image model outputs (real names/DOB/PAN/Aadhaar numbers) and
+# manually transcribed ground truth for the same real documents. Same trust
+# boundary as the source data: local-only, never committed.
+poc/real_data_cache/
+poc/manual_ground_truth_cache/
+
+# Manually-authored/derived question sets for the real-PII visual_rag
+# datasets (rental agreements, PAN, Aadhaar). Whole directory ignored since
+# every file in it is PII-adjacent by construction.
+visual_rag/manual_qa_cache/
+
+# Curated cross-dataset demo set for ask_image.py -- mixes in real PAN/
+# Aadhaar/rental-agreement values and image paths, same trust boundary as
+# manual_qa_cache/ above.
+visual_rag/curated_demo_qa.json
+
+# Combined ground-truth files (real PII) feeding the expanded PAN/Aadhaar
+# scale-up -- same trust boundary as manual_qa_cache/ above.
+visual_rag/expanded_ground_truth/
+
+# Page manifests, retrieval cache, and oracle cache -- ALL datasets, not
+# just the real-PII ones. Every file in these three bakes in this machine's
+# absolute local image paths (image_path / top_k_image_paths fields), so
+# they're broken on any other clone regardless of dataset -- confirmed this
+# affects the public datasets (ChartQA/SPIQA/MMLongBench-Doc) exactly as
+# much as PAN/Aadhaar/rental agreements. Regenerated locally by
+# prepare_<dataset>.py -> build_index.py -> retrieve.py -> run_oracle_qa.py
+# (see README) once the source data is in place. (PAN/Aadhaar/rental
+# agreements are additionally real PII, same trust boundary as
+# poc/real_data_cache/ above, but that's no longer why these are ignored.)
+visual_rag/page_manifests/
+visual_rag/retrieval_cache/
+visual_rag/oracle_cache/
+
+# Answer-generation cache and question sets, all datasets -- result logs,
+# not source code. Regenerated locally by the pipeline in README; the
+# aggregate findings they back are captured in visual_rag_summary.json,
+# which is committed.
+visual_rag/rag_cache/
+visual_rag/qa_cache/
+
+# ColQwen2 retrieval indexes -- large binary embeddings, not worth committing
+# regardless of dataset (some are also built on the real-PII datasets above).
+visual_rag/indexes/
